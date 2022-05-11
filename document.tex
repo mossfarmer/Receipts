@@ -1,0 +1,51 @@
+\documentclass{exam}
+\renewcommand{\solutiontitle}{\noindent\textbf{\underline{Answer:}}\par\noindent}
+\printanswers
+
+\begin{document}
+	\section*{General Network Questions}
+		\begin{enumerate}
+		\item Explain the function for each layer in the OSI model.
+		\begin{solution}
+			\begin{enumerate}
+				\item[7]The Application layer is meant for the application of protocols rather than dealing with applications themselves. For example Layer 7 \textit{Applies} HTTP but not directly using an application like Firefox 
+				\item[6] The Presentation Layer is responsible for parsing data to a format that Layer 7 will accept, and also for parsing data from Layer 7 into Layer 5 
+				\item[5] The Session Layer is to create a connection to the destination for the data that Layer 6 has got done parsing 
+				\item[4] The Transport Layer is what coordinates the transfer of data for the session, such as packet size and sequencing, such as TCP and UDP
+				\item[3] The Network Layer handles network functions like routing data/packets to the proper location using the Internet Protocol to find the proper place 
+				\item[2] The Data Link Layer receives packets from the network layer and adds information that will properly forward the packet to the correct device.   
+				\item[1] The Physical Layer is comprised of cables and connectors, its role is to transmit signals through physical connections to devices
+				
+				
+			\end{enumerate}
+		\end{solution}
+		\item What is ARP and how does ARP work?
+		\begin{solution}
+			ARP stands for address resolution protocol, translates IP addresses to MAC addresses. It facilitates connections between devices on a network.
+		\end{solution}
+		\item What is Ethernet?
+		\begin{solution}
+			Ethernet is a physical connection in the form of cables that facilitates network communication 
+		\end{solution}
+		\item What is a broadcast storm?
+		\begin{solution}
+			A broadcast storm occurs when a device or devices on a network send a large amount of broadcast pings which go to every device on a network. This can completely congest the network if enough devices are sending out these pings. 
+		\end{solution}
+		\item What is ARP poisoning and how can it be used to capture traffic? 
+		\begin{solution}
+			ARP poisoning is an attack that occurs when an attacker sends bad ARP response packets to a gateway to lie to the gateway in order to get traffic sent to the attackers device instead of the intended device. This means traffic will now be routed through the attackers device and they can intercept traffic. 
+		\end{solution}
+		\item What is the difference between a Layer 4 firewall and a layer 7 firewall? 
+		\begin{solution}
+			A layer 4 firewall can inspect packets and track active network connections, called stateful packet inspection. A layer 7 firewall can do everything a layer 4 firewall can do but can also view contents of network packets like protocols being used (HTTP,HTTPS).  
+		\end{solution}
+		\item What port does PING run on? 
+		\begin{solution}
+			Ping does not use a port since it uses the ICMP protocol which operates at the network layer. Ports are handled at the Transport layer. 
+		\end{solution}
+		\item When you open your web browser and enter in google.com, what is the process that occurs to view the web page. 
+		\begin{solution}
+			\item The process of opening a web
+		\end{solution}
+	\end{enumerate}
+\end{document}
