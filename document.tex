@@ -85,9 +85,41 @@
 		The CIS CSC are a list of steps that provide specific actions that can be taken by a defense team in order to remove vulnerabilities. It functions as a checklist for any team in order to protect their systems from the most common attacks. 
 		
 	\end{solution}
-mework 	\item What is the MITRE ATT\&CK framework, and why is it useful?
+	\item What is the MITRE ATT\&CK framework, and why is it useful?
 	\begin{solution}
 		The MITRE ATT\&CK framework is a model for how attackers may go about attacking a system, it is meant to inform how defensive teams should understand the set of goals and actions attackers may take as well as provide offensive teams a way to mimic real attackers. 
 	\end{solution}
+	\section*{Linux Concepts}
+	\item Describe the process of updating operating systems 
+	\begin{solution}
+		Almost all distributions of Linux have a package manager installed which manage what versions of programs should be installed. A user can update a system with a single command that will update the operating system according to the distribution.
+	\end{solution}
+	\item Describe the process of setting up an Apache Web Server
+	\begin{solution}
+		First a user needs to verify that they have Apache installed it may be called httpd, then the user needs to enable the service typically by using systemd. The user can then edit the configuration file and make changes as well as choose what pages are being served. 
+	\end{solution}
+	\item Describe the process of compiling software not provided by the OS repository 
+	\begin{solution}
+		When building a file from the source, the file will usually come with a makefile as well as a file that contains the dependencies. After installing the dependencies and making the program should be ready to be ran. 
+	\end{solution}
+	\item Describe the process of building an installation package for the OS (rpm/deb for example)
+	\begin{solution}
+		On a debian system, a user can use the dpkg command to locally build and install a .deb file. We can use the package manager to build the dependencies for this file as well.
+	\end{solution}
+	\item Describe the process of configuring the OS to authenticate against Active Directory 
+	\begin{solution}
+		I am lost on this one when it comes to linux. 
+	\end{solution}
+	\item  What is the wget command used for 
+	\begin{solution}
+		Wget is a command used for downloading files from web pages, one can download the source code as well as any files or images on the site. 
+	\end{solution}
+	\item How would you get a list of all running processes on a Linux host?
+	\begin{solution}
+		Using the ps command would bring up a list of all processes running on a host, it also provides ways to filter these processes. 
+	\end{solution}
+	\section*{Windows Questions}
+	\item What is a Windows "Domain" why is it important?
+	
 	\end{enumerate}
 \end{document}
