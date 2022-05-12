@@ -45,7 +45,49 @@
 		\end{solution}
 		\item When you open your web browser and enter in google.com, what is the process that occurs to view the web page. 
 		\begin{solution}
-			\item The process of opening a web
+			\item First we initiate what is called a 3-way handshake to begin a session with google servers.After the session is made we request a page from a website a GET request is sent to their server requesting for it to "serve" the page. The request goes through the TCP/IP model and information is continually added to the request as it makes its way to the server where the server then opens the complete transmission and understands what we want. The website will respond with a POST request and we should be able to see the google.com page
 		\end{solution}
+	\section*{General InfoSec Questions}
+	\item What is the difference between a threat, a vulnerability, and a risk?
+	\begin{solution}
+		A threat is an event that can cause harm or reduce the value of an asset. A vulnerability is a weakness in the configuration of software or hardware. Risk is combination of the threats and the vulnerabilities, the amount of damage that can be done along with the ways in which it would be inflicted. 
+	\end{solution}
+	\item What is the difference between encoding,encrypting, and hashing?
+	\begin{solution}
+		\item Encoding is just a way to format data in a more convenient way, it is not used to protect or validate information and can be reversed easily.Encryption is the process of hiding data in a way that it can be reversed if an individual has the right key in order to decrypt it.   Hashing is a one-way function meaning it cannot be reversed, meaning it is not used to protect data as it cannot be retrieved. Hashing is used to validate data because if a file is even 1 bit different it will have a much different hash than another file.  
+	\end{solution}
+	\item What is open-source intelligence?
+	\begin{solution}
+		Open Source Intelligence or OSINT is information that can be retrieved from free and legal public sources. This information is commonly gathered with specialized OSINT tools or Google dorking. 
+	\end{solution}
+	\item What is ToR and why is it used?
+	\begin{solution}
+		The Onion Router (ToR) is a method of routing network packets in a way that anonymizes the traffic by sending encrypted traffic through 3 separate relays/nodes.  
+	\end{solution}
+	\item What is the difference between authentication and authorization?
+	\begin{solution}
+		Authentication is a process where the identifying party offers some form of credentials to validate the identification. Authorization is what the authenticated entity is allowed to access or the actions that may be taken. 
+	\end{solution}
+	\item What is the difference between confidentiality, integrity, and availability?
+	\begin{solution}
+		The goal of Confidentiality is to ensure that data can only be accessed or viewed by authorized parties. The goal of integrity is to ensure that information that is stored or in motion is not edited in any way. Availability aspires to prevent disruption of services or productivity. 
+	\end{solution}
+	\item What is the most important for information security confidentiality, integrity, availability. 
+	\begin{solution}
+		While all of these are absolutely crucial, Confidentiality is the most important as without there is no security. That being said a failure in integrity means that the data could be corrupted and availability failure could make the systems worthless. 
+	\end{solution}
+	\item Why do modern anti-virus systems need to monitor system memory
+	\begin{solution}
+		This is because parts of a Virus may reside in system memory and there are types of viruses that will edit the system memory so that it can replicate itself if a process is killed. 
+	\end{solution}
+	\item What is the CIS Critical Security Controls (CSC), and why are they useful?
+	\begin{solution}
+		The CIS CSC are a list of steps that provide specific actions that can be taken by a defense team in order to remove vulnerabilities. It functions as a checklist for any team in order to protect their systems from the most common attacks. 
+		
+	\end{solution}
+mework 	\item What is the MITRE ATT\&CK framework, and why is it useful?
+	\begin{solution}
+		The MITRE ATT\&CK framework is a model for how attackers may go about attacking a system, it is meant to inform how defensive teams should understand the set of goals and actions attackers may take as well as provide offensive teams a way to mimic real attackers. 
+	\end{solution}
 	\end{enumerate}
 \end{document}
